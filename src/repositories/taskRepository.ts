@@ -41,10 +41,4 @@ export const updateTask = async (id:number, description: TaskDescriptionModel): 
 
     return {} as TaskModel
 
-    // if(indexId !== -1) {
-    //     database[indexId].description  = description.description
-    // }
-
-    // return database[indexId]
-
 }
