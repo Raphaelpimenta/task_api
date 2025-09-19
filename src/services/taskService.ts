@@ -69,12 +69,6 @@ export const updateTaskService = async (id: number, description: TaskDescription
 
     let response = null
 
-    // if(Object.keys(data).length === 0) {
-    //     response = await badRequest()
-    // } else {
-    //     response = await ok(data)
-    // }
-
     if(Object.keys(data).length !== 0) {
         response = await ok(data)
     } else {
