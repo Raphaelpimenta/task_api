@@ -32,3 +32,17 @@ export const updateTaskController = async (req: Request, res: Response) => {
         const data = await service.updateTaskService(id, bodyValue)
         res.status(data.statusCode).json(data.body)
 }
+
+export const updateTaskTitleController = async (req: Request, res: Response) => {
+        const id = parseInt(req.params.id) 
+        const bodyValue: TaskModel = req.body
+        const data = await service.updateTitleTaskService(id, bodyValue)
+        res.status(data.statusCode).json(data.body)
+}
+
+export const updateTaskSubtitleController = async (req: Request, res: Response) => {
+        const id = parseInt(req.params.id) 
+        const bodyValue: TaskModel = req.body
+        const data = await service.updateSubtitleTaskService(id, bodyValue)
+        res.status(data.statusCode).json(data.body)
+}
